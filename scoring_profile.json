@@ -1,0 +1,131 @@
+{
+  "version": 1,
+  "description": "People Operations and Talent Acquisition for cross-border remote teams. Skill fit is not confirmation of UAE work eligibility.",
+  "settings": {
+    "title_multiplier": 3,
+    "body_multiplier": 1,
+    "score_multiplier": 1,
+    "generic_cap": 35,
+    "standout_threshold": 75
+  },
+  "fit_terms": [
+    {
+      "pattern": "people operations|people ops|hr operations|human resources operations",
+      "weight": 18
+    },
+    {
+      "pattern": "talent acquisition|recruitment manager|recruiting manager|talent partner",
+      "weight": 18
+    },
+    {
+      "pattern": "people (&|and) culture|hr business partner|human resources business partner|\\bhrbp\\b",
+      "weight": 14
+    },
+    {
+      "pattern": "full.cycle recruit|end.to.end recruit",
+      "weight": 12
+    },
+    {
+      "pattern": "employee lifecycle|onboarding|offboarding",
+      "weight": 10
+    },
+    {
+      "pattern": "cross.border|multi.country|international hr",
+      "weight": 10
+    },
+    {
+      "pattern": "bamboohr|zoho people",
+      "weight": 8
+    },
+    {
+      "pattern": "performance management|employee relations|workforce planning",
+      "weight": 8
+    },
+    {
+      "pattern": "hr polic|hr process|hr reporting|hr function",
+      "weight": 8
+    },
+    {
+      "pattern": "worldwide|work from anywhere|remote.first|distributed team",
+      "weight": 10
+    }
+  ],
+  "signature_terms": [
+    "people operations|people ops|hr operations|talent acquisition|recruitment manager|recruiting manager|talent partner|people (&|and) culture",
+    "full.cycle recruit|employee lifecycle|cross.border hr|\\bhrbp\\b|hr business partner|human resources business partner"
+  ],
+  "poor_fit_terms": [
+    {
+      "pattern": "\\b(?:on.?site|hybrid)\\b",
+      "penalty": 80
+    },
+    {
+      "pattern": "\\b(?:US|USA|United States|UK|United Kingdom)[ -]only\\b|must (?:be based|reside|live) in (?:the )?(?:US|USA|United States|UK|United Kingdom)\\b|(?:UK|US) right.to.work",
+      "penalty": 100
+    },
+    {
+      "pattern": "payroll (?:specialist|administrator|clerk)|hr assistant|hr administrator",
+      "penalty": 60
+    },
+    {
+      "pattern": "\\b(?:intern|internship|trainee|apprentice)\\b",
+      "penalty": 60
+    },
+    {
+      "pattern": "toxicolog|environmental scientist|interior designer|construction manager",
+      "penalty": 80
+    }
+  ],
+  "test_cases": [
+    {
+      "title": "People Operations Manager",
+      "company": "Example distributed company",
+      "description": "Worldwide remote-first role managing full-cycle recruitment, employee lifecycle, cross-border HR, BambooHR, performance management and HR policy.",
+      "expected_score_range": [
+        100,
+        100
+      ],
+      "rationale": "Strong combination of target responsibilities and distributed-team context."
+    },
+    {
+      "title": "Talent Acquisition Partner",
+      "company": "Example company",
+      "description": "Full-cycle recruitment for a distributed team; onboarding and workforce planning.",
+      "expected_score_range": [
+        85,
+        100
+      ],
+      "rationale": "Strong recruitment match."
+    },
+    {
+      "title": "HR Manager",
+      "company": "Example company",
+      "description": "General office administration.",
+      "expected_score_range": [
+        0,
+        35
+      ],
+      "rationale": "Broad title alone is insufficient."
+    },
+    {
+      "title": "People Operations Manager — US-only",
+      "company": "Example company",
+      "description": "Must reside in the United States. Employee lifecycle and BambooHR.",
+      "expected_score_range": [
+        0,
+        25
+      ],
+      "rationale": "Location restriction."
+    },
+    {
+      "title": "Payroll Administrator",
+      "company": "Example company",
+      "description": "Payroll processing and HR reporting.",
+      "expected_score_range": [
+        0,
+        25
+      ],
+      "rationale": "Payroll-only role."
+    }
+  ]
+}
