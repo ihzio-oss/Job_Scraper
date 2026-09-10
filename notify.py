@@ -37,7 +37,6 @@ CONFIG_EXAMPLE_PATH = os.path.join(SCRIPT_DIR, "config.example.json")
 # scoring_profile.json → fork owner's copy; scoring_profile.example.json → upstream fallback
 SCORING_PROFILE_PATH = os.path.join(SCRIPT_DIR, "scoring_profile.json")
 SCORING_PROFILE_EXAMPLE_PATH = os.path.join(SCRIPT_DIR, "scoring_profile.example.json")
-PUSHOVER_URL = "https://api.pushover.net/1/messages.json"
 TELEGRAM_API_BASE = "https://api.telegram.org"
 # Derive dashboard URL from GITHUB_REPOSITORY (owner/repo) so forks get their own URL.
 _gh_repo = os.environ.get("GITHUB_REPOSITORY", "")
@@ -305,12 +304,18 @@ def _fit(title: str, body: str) -> int:
     return max(0, min(100, round(score * settings["score_multiplier"])))
 
 
+def _is_eligible_remote(job: dict) -> bool:
+    text = " ".join(str(job.get(k, "") or "") for k in ("title", "location", "description")).lower()
+    if re.search(r"\b(us|usa|united states|canada|australia)[ -]?(only|based|residents?)\b|\bwork authorization (in|for) (the )?(us|usa|canada|australia)\b", text, re.I):
+        return False
+    return bool(re.search(r"worldwide|global|anywhere|remote.*(europe|emea|uk|united kingdom|eu|uae|dubai)|(?:europe|emea|uk|united kingdom|eu|uae|dubai).*remote", text, re.I))
+
 def relevance(job: dict) -> tuple[bool, list, int]:
     title = job.get("title", "") or ""
     body = f"{job.get('company', '')} {job.get('description', '')}"
     stars = _stars(f"{title} {body}")
     fit = _fit(title, body)
-    return (bool(stars) or fit >= _min_fit()), stars, fit
+    return (_is_eligible_remote(job) and (bool(stars) or fit >= _min_fit())), stars, fit
 
 
 def _identity(job: dict) -> str:
@@ -506,30 +511,6 @@ def build_weekly_digest(days: int | None = None) -> tuple[str, str, str]:
     return title, msg, os.environ.get("DASHBOARD_URL") or DASHBOARD_URL
 
 
-def send_pushover(token: str, user: str, *, title: str, message: str,
-                  url: str = "", url_title: str = "", priority: int = 0) -> bool:
-    body = {"token": token, "user": user, "title": title[:250],
-            "message": message[:1024], "priority": priority}
-    if url:
-        body["url"] = url
-        body["url_title"] = url_title or "View posting"
-    data = urllib.parse.urlencode(body).encode()
-    try:
-        with urllib.request.urlopen(urllib.request.Request(PUSHOVER_URL, data=data), timeout=15) as r:
-            return 200 <= r.status < 300
-    except urllib.error.HTTPError as e:
-        # Pushover returns a JSON body with the specific error (bad token/user…).
-        try:
-            detail = e.read().decode("utf-8", "ignore")
-        except Exception:
-            detail = ""
-        print(f"  ⚠️  Pushover HTTP {e.code}: {detail[:300]}")
-        return False
-    except Exception as e:
-        print(f"  ⚠️  Pushover send failed: {e}")
-        return False
-
-
 def send_telegram(token: str, chat_id: str, *, title: str, message: str,
                   url: str = "") -> bool:
     """Send a compact job notification through the Telegram Bot API."""
@@ -563,11 +544,9 @@ def send_telegram(token: str, chat_id: str, *, title: str, message: str,
 
 def notify_new_jobs(new_jobs: list, source_label: str = ""):
     """Send high-fit, deduplicated new roles to every configured channel."""
-    pushover_token = os.environ.get("PUSHOVER_TOKEN")
-    pushover_user = os.environ.get("PUSHOVER_USER")
     telegram_token = os.environ.get("TELEGRAM_BOT_TOKEN")
     telegram_chat_id = os.environ.get("TELEGRAM_CHAT_ID")
-    if not ((pushover_token and pushover_user) or (telegram_token and telegram_chat_id)):
+    if not (telegram_token and telegram_chat_id):
         return
 
     notified = _load_notified()
@@ -593,13 +572,8 @@ def notify_new_jobs(new_jobs: list, source_label: str = ""):
     for job, stars, fit in picks[:MAX_PUSHES_PER_RUN]:
         tag = ("★ " + ", ".join(stars)) if stars else f"uyum {fit}/100"
         msg = f"{job.get('company', '?')} — {job.get('location', '')}\n{tag}"
-        if job.get("salary"):
-            msg += f" · {job['salary']}"
+        msg += f" · {job.get('salary') or 'Maaş belirtilmemiş'}"
         title = f"🌍 {job.get('title', 'Yeni ilan')}"
-        if pushover_token and pushover_user:
-            send_pushover(pushover_token, pushover_user, title=title, message=msg,
-                          url=job.get("url", ""), url_title="İlanı aç",
-                          priority=1 if stars else 0)
         if telegram_token and telegram_chat_id:
             send_telegram(telegram_token, telegram_chat_id, title=title, message=msg,
                           url=job.get("url", ""))
@@ -608,18 +582,10 @@ def notify_new_jobs(new_jobs: list, source_label: str = ""):
     extra = len(picks) - sent
     if extra > 0:
         summary = f"+{extra} uygun yeni ilan daha var — panelden açabilirsin."
-        if pushover_token and pushover_user:
-            send_pushover(pushover_token, pushover_user, title="🌍 Daha fazla ilan",
-                          message=summary)
         if telegram_token and telegram_chat_id:
             send_telegram(telegram_token, telegram_chat_id, title="🌍 Daha fazla ilan",
                           message=summary)
-    channels = []
-    if pushover_token and pushover_user:
-        channels.append("Pushover")
-    if telegram_token and telegram_chat_id:
-        channels.append("Telegram")
-    print(f"  📲 {', '.join(channels)}: notified {sent} relevant role(s)"
+    print(f"  📲 Telegram: notified {sent} relevant role(s)"
           + (f" (+{extra} summarized)" if extra else ""))
     _save_notified(notified)
 
