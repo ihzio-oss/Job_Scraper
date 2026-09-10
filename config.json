@@ -1,0 +1,282 @@
+{
+  "profile": {
+    "title": "Job Finder Esra",
+    "subtitle": "People Operations · Talent Acquisition · Dubai / Worldwide Remote · Verify UAE eligibility",
+    "emoji": "🌍"
+  },
+  "keywords": {
+    "include": [
+      "people operations",
+      "people ops",
+      "hr operations",
+      "human resources operations",
+      "people & culture",
+      "people and culture",
+      "talent acquisition",
+      "recruitment manager",
+      "recruitment lead",
+      "recruiting manager",
+      "recruiting lead",
+      "talent partner",
+      "hr business partner",
+      "human resources business partner",
+      "people business partner",
+      "hrbp",
+      "hr manager",
+      "human resources manager",
+      "hr lead",
+      "human resources lead",
+      "fractional hr",
+      "recruitment operations",
+      "recruiting operations"
+    ],
+    "exclude": [
+      "intern",
+      "internship",
+      "trainee",
+      "apprentice",
+      "co-op",
+      "hr assistant",
+      "human resources assistant",
+      "hr administrator",
+      "payroll specialist",
+      "payroll administrator",
+      "payroll clerk",
+      "onsite",
+      "on-site",
+      "hybrid"
+    ],
+    "fuzzy_seniority": [],
+    "fuzzy_domain": [],
+    "fuzzy_exclude": []
+  },
+  "search_terms": {
+    "linkedin": [
+      "people operations remote",
+      "HR operations remote",
+      "people and culture remote",
+      "talent acquisition remote",
+      "recruitment manager remote",
+      "HR business partner remote",
+      "fractional HR remote",
+      "HR manager remote startup"
+    ],
+    "indeed": [
+      "people operations remote",
+      "HR operations remote",
+      "people and culture remote",
+      "talent acquisition remote",
+      "recruitment manager remote",
+      "HR business partner remote",
+      "fractional HR remote",
+      "HR manager remote startup"
+    ],
+    "glassdoor": [
+      "people operations remote",
+      "HR operations remote",
+      "people and culture remote",
+      "talent acquisition remote",
+      "recruitment manager remote",
+      "HR business partner remote",
+      "fractional HR remote",
+      "HR manager remote startup"
+    ],
+    "ziprecruiter": [
+      "people operations remote",
+      "HR operations remote",
+      "people and culture remote",
+      "talent acquisition remote",
+      "recruitment manager remote",
+      "HR business partner remote",
+      "fractional HR remote",
+      "HR manager remote startup"
+    ],
+    "google_jobs": [
+      "people operations remote",
+      "HR operations remote",
+      "people and culture remote",
+      "talent acquisition remote",
+      "recruitment manager remote",
+      "HR business partner remote",
+      "fractional HR remote",
+      "HR manager remote startup"
+    ],
+    "hiring_cafe": [
+      "people operations remote",
+      "HR operations remote",
+      "people and culture remote",
+      "talent acquisition remote",
+      "recruitment manager remote",
+      "HR business partner remote",
+      "fractional HR remote",
+      "HR manager remote startup"
+    ],
+    "calcareers": [],
+    "usajobs": [],
+    "governmentjobs": [],
+    "workday": []
+  },
+  "locations": {
+    "linkedin": [
+      {
+        "name": "United Arab Emirates",
+        "location": "United Arab Emirates",
+        "geoId": ""
+      },
+      {
+        "name": "EMEA",
+        "location": "EMEA",
+        "geoId": ""
+      },
+      {
+        "name": "Worldwide",
+        "location": "Worldwide",
+        "geoId": ""
+      }
+    ],
+    "indeed": [
+      {
+        "location": "Remote",
+        "country": "United Arab Emirates"
+      },
+      {
+        "location": "Remote",
+        "country": "UK"
+      }
+    ],
+    "glassdoor": [
+      {
+        "location": "Dubai",
+        "country": "United Arab Emirates"
+      },
+      {
+        "location": "London",
+        "country": "UK"
+      }
+    ],
+    "ziprecruiter": [
+      {
+        "location": "Remote",
+        "country": "USA"
+      }
+    ],
+    "google_jobs": [
+      {
+        "location": "Remote",
+        "country": "UK"
+      },
+      {
+        "location": "United Arab Emirates",
+        "country": "United Arab Emirates"
+      }
+    ],
+    "hiring_cafe": [
+      {
+        "location": "United States"
+      }
+    ],
+    "linkedin_partitions": {
+      "states": [],
+      "high_volume": {
+        "locations": [],
+        "day_slices": true
+      }
+    }
+  },
+  "location_filter": {
+    "terms": [
+      "remote",
+      "worldwide",
+      "anywhere",
+      "global",
+      "emea",
+      "united arab emirates",
+      "uae",
+      "dubai"
+    ]
+  },
+  "google_jobs": {
+    "queries": [],
+    "serpapi_api_key": "",
+    "oxylabs_username": "",
+    "oxylabs_password": ""
+  },
+  "jobspy": {
+    "proxies": [],
+    "user_agent": ""
+  },
+  "hiring_cafe": {
+    "max_pages": 3
+  },
+  "employers": {
+    "priority": [],
+    "exclude": []
+  },
+  "priority_topics": {
+    "terms": [
+      [
+        "Cross-border HR",
+        "cross.border|multi.country|international hr"
+      ],
+      [
+        "Employee lifecycle",
+        "employee lifecycle|onboarding|offboarding"
+      ],
+      [
+        "Full-cycle recruitment",
+        "full.cycle recruit|end.to.end recruit"
+      ],
+      [
+        "HR systems",
+        "bamboohr|zoho people"
+      ],
+      [
+        "Distributed teams",
+        "distributed teams|remote.first"
+      ]
+    ]
+  },
+  "role_categories": {
+    "terms": [
+      [
+        "Talent Acquisition",
+        "talent acquisition|talent partner"
+      ],
+      [
+        "Recruitment Operations",
+        "recruit(ment|ing) operations"
+      ],
+      [
+        "Recruitment Leadership",
+        "recruit(ment|ing) (manager|lead)"
+      ],
+      [
+        "People Operations",
+        "people op(eration)?s|hr operations|human resources operations"
+      ],
+      [
+        "People & Culture",
+        "people (&|and) culture"
+      ],
+      [
+        "HR Business Partner",
+        "hrbp|business partner"
+      ],
+      [
+        "Fractional HR",
+        "fractional"
+      ],
+      [
+        "HR Leadership",
+        "hr (manager|lead)|human resources (manager|lead)"
+      ]
+    ]
+  },
+  "notify": {
+    "min_fit": 75,
+    "weekly_digest": {
+      "enabled": false,
+      "days": 7
+    }
+  }
+}
