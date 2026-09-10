@@ -305,10 +305,23 @@ def _fit(title: str, body: str) -> int:
 
 
 def _is_eligible_remote(job: dict) -> bool:
-    text = " ".join(str(job.get(k, "") or "") for k in ("title", "location", "description")).lower()
-    if re.search(r"\b(us|usa|united states|canada|australia)[ -]?(only|based|residents?)\b|\bwork authorization (in|for) (the )?(us|usa|canada|australia)\b", text, re.I):
+    """Allow only genuinely remote jobs that explicitly permit Esra's geographies."""
+    arrangement = " ".join(str(job.get(k, "") or "") for k in ("work_arrangement", "location"))
+    if not (job.get("is_remote") or re.search(r"\\bremote\\b", arrangement, re.I)):
         return False
-    return bool(re.search(r"worldwide|global|anywhere|remote.*(europe|emea|uk|united kingdom|eu|uae|dubai)|(?:europe|emea|uk|united kingdom|eu|uae|dubai).*remote", text, re.I))
+
+    text = " ".join(str(job.get(k, "") or "") for k in ("title", "location", "description", "work_arrangement"))
+    # Country-locked roles are not usable from Dubai/Europe, even when labelled remote.
+    if re.search(r"\\b(united states|usa|u\\.?s\\.?|canada|australia)\\b", text, re.I):
+        return False
+
+    # "Global operations" is not eligibility. Require an explicit eligible work region.
+    return bool(re.search(
+        r"worldwide|work from anywhere|anywhere in the world|"
+        r"remote (?:in|across|within) (?:europe|emea|the eu|eu|uk|united kingdom|uae|dubai)|"
+        r"(?:europe|emea|the eu|eu|uk|united kingdom|uae|dubai)[ -]?(?:based )?remote",
+        text, re.I,
+    ))
 
 def relevance(job: dict) -> tuple[bool, list, int]:
     title = job.get("title", "") or ""
