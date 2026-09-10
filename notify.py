@@ -38,6 +38,7 @@ CONFIG_EXAMPLE_PATH = os.path.join(SCRIPT_DIR, "config.example.json")
 SCORING_PROFILE_PATH = os.path.join(SCRIPT_DIR, "scoring_profile.json")
 SCORING_PROFILE_EXAMPLE_PATH = os.path.join(SCRIPT_DIR, "scoring_profile.example.json")
 PUSHOVER_URL = "https://api.pushover.net/1/messages.json"
+TELEGRAM_API_BASE = "https://api.telegram.org"
 # Derive dashboard URL from GITHUB_REPOSITORY (owner/repo) so forks get their own URL.
 _gh_repo = os.environ.get("GITHUB_REPOSITORY", "")
 DASHBOARD_URL = (
@@ -529,12 +530,45 @@ def send_pushover(token: str, user: str, *, title: str, message: str,
         return False
 
 
+def send_telegram(token: str, chat_id: str, *, title: str, message: str,
+                  url: str = "") -> bool:
+    """Send a compact job notification through the Telegram Bot API."""
+    text = f"{title}\n{message}"
+    if url:
+        text += f"\n\n🔗 {url}"
+    body = json.dumps({
+        "chat_id": chat_id,
+        "text": text[:4096],
+        "disable_web_page_preview": True,
+    }).encode("utf-8")
+    request = urllib.request.Request(
+        f"{TELEGRAM_API_BASE}/bot{token}/sendMessage",
+        data=body,
+        headers={"Content-Type": "application/json"},
+    )
+    try:
+        with urllib.request.urlopen(request, timeout=15) as response:
+            return 200 <= response.status < 300
+    except urllib.error.HTTPError as e:
+        try:
+            detail = e.read().decode("utf-8", "ignore")
+        except Exception:
+            detail = ""
+        print(f"  ⚠️  Telegram HTTP {e.code}: {detail[:300]}")
+        return False
+    except Exception as e:
+        print(f"  ⚠️  Telegram send failed: {e}")
+        return False
+
+
 def notify_new_jobs(new_jobs: list, source_label: str = ""):
-    """Push the highly-relevant, not-yet-notified entries of new_jobs."""
-    token = os.environ.get("PUSHOVER_TOKEN")
-    user = os.environ.get("PUSHOVER_USER")
-    if not token or not user:
-        return  # notifications disabled — no creds
+    """Send high-fit, deduplicated new roles to every configured channel."""
+    pushover_token = os.environ.get("PUSHOVER_TOKEN")
+    pushover_user = os.environ.get("PUSHOVER_USER")
+    telegram_token = os.environ.get("TELEGRAM_BOT_TOKEN")
+    telegram_chat_id = os.environ.get("TELEGRAM_CHAT_ID")
+    if not ((pushover_token and pushover_user) or (telegram_token and telegram_chat_id)):
+        return
 
     notified = _load_notified()
     seen = set(notified["ids"])
@@ -554,31 +588,40 @@ def notify_new_jobs(new_jobs: list, source_label: str = ""):
         _save_notified(notified)
         return
 
-    # Starred first, then highest fit.
     picks.sort(key=lambda p: (-len(p[1]), -p[2]))
     sent = 0
     for job, stars, fit in picks[:MAX_PUSHES_PER_RUN]:
-        tag = ("★ " + ", ".join(stars)) if stars else f"fit {fit}/100"
+        tag = ("★ " + ", ".join(stars)) if stars else f"uyum {fit}/100"
         msg = f"{job.get('company', '?')} — {job.get('location', '')}\n{tag}"
         if job.get("salary"):
             msg += f" · {job['salary']}"
-        send_pushover(
-            token, user,
-            title=f"🧪 {job.get('title', 'New role')}",
-            message=msg,
-            url=job.get("url", ""), url_title="Open posting",
-            priority=1 if stars else 0,   # priority topics ping with high priority
-        )
+        title = f"🌍 {job.get('title', 'Yeni ilan')}"
+        if pushover_token and pushover_user:
+            send_pushover(pushover_token, pushover_user, title=title, message=msg,
+                          url=job.get("url", ""), url_title="İlanı aç",
+                          priority=1 if stars else 0)
+        if telegram_token and telegram_chat_id:
+            send_telegram(telegram_token, telegram_chat_id, title=title, message=msg,
+                          url=job.get("url", ""))
         sent += 1
 
     extra = len(picks) - sent
     if extra > 0:
-        send_pushover(token, user, title="🧪 More relevant roles",
-                      message=f"+{extra} more relevant new role(s) — open the dashboard.")
-    print(f"  📲 Pushover: notified {sent} relevant role(s)"
+        summary = f"+{extra} uygun yeni ilan daha var — panelden açabilirsin."
+        if pushover_token and pushover_user:
+            send_pushover(pushover_token, pushover_user, title="🌍 Daha fazla ilan",
+                          message=summary)
+        if telegram_token and telegram_chat_id:
+            send_telegram(telegram_token, telegram_chat_id, title="🌍 Daha fazla ilan",
+                          message=summary)
+    channels = []
+    if pushover_token and pushover_user:
+        channels.append("Pushover")
+    if telegram_token and telegram_chat_id:
+        channels.append("Telegram")
+    print(f"  📲 {', '.join(channels)}: notified {sent} relevant role(s)"
           + (f" (+{extra} summarized)" if extra else ""))
     _save_notified(notified)
-
 
 def send_weekly_digest(*, days: int | None = None, force: bool = False,
                        dry_run: bool = False) -> bool:
