@@ -528,7 +528,7 @@ def scrape_curated_employers() -> list:
 
 LINKEDIN_SEARCH_TERMS = _cfg("search_terms.linkedin", [])
 
-LINKEDIN_LOOKBACK_SECONDS = 3600          # 1h — every-2h watcher only surfaces the freshest hour
+LINKEDIN_LOOKBACK_SECONDS = 72 * 3600     # 72h — include the last three days
 LINKEDIN_PRIORITY_LOOKBACK_SECONDS = 86400 # 24h — priority digest is a daily 8pm PT run
 
 # Geographies to search. geoId is LinkedIn's authoritative region filter; an
@@ -1034,7 +1034,7 @@ def scrape_linkedin_priority() -> list:
 # Both reuse python-jobspy so the repo keeps its single optional dependency.
 # ---------------------------------------------------------------------------
 
-INDEED_LOOKBACK_HOURS = 24  # Indeed posting dates are ~day-resolution, so a 1h window
+INDEED_LOOKBACK_HOURS = 72  # three-day discovery window
 # returns almost nothing; the hourly watcher's cross-run dedupe trims the overlap.
 INDEED_BACKFILL_DAYS = 50  # one-time historical backfill window
 
@@ -1043,18 +1043,18 @@ INDEED_BACKFILL_DAYS = 50  # one-time historical backfill window
 # than LinkedIn to keep the call count sane (terms × geos jobspy calls).
 INDEED_GEOS = _cfg("locations.indeed", [])
 INDEED_SEARCH_TERMS = _cfg("search_terms.indeed", [])
-GLASSDOOR_LOOKBACK_HOURS = 24
+GLASSDOOR_LOOKBACK_HOURS = 72
 GLASSDOOR_BACKFILL_DAYS = 30
 GLASSDOOR_GEOS = _cfg("locations.glassdoor", INDEED_GEOS)
 GLASSDOOR_SEARCH_TERMS = _cfg("search_terms.glassdoor", INDEED_SEARCH_TERMS)
-ZIPRECRUITER_LOOKBACK_HOURS = 24
+ZIPRECRUITER_LOOKBACK_HOURS = 72
 ZIPRECRUITER_BACKFILL_DAYS = 30
 ZIPRECRUITER_GEOS = _cfg("locations.ziprecruiter", [
     geo for geo in INDEED_GEOS
     if str(geo.get("country", "")).lower() in {"usa", "us", "united states", "canada"}
 ])
 ZIPRECRUITER_SEARCH_TERMS = _cfg("search_terms.ziprecruiter", INDEED_SEARCH_TERMS)
-GOOGLE_JOBS_LOOKBACK_HOURS = 24
+GOOGLE_JOBS_LOOKBACK_HOURS = 72
 GOOGLE_JOBS_BACKFILL_DAYS = 30
 GOOGLE_JOBS_GEOS = _cfg("locations.google_jobs", INDEED_GEOS)
 GOOGLE_JOBS_SEARCH_TERMS = _cfg("search_terms.google_jobs", INDEED_SEARCH_TERMS)
