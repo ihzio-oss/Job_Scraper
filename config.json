@@ -1,7 +1,7 @@
 {
   "profile": {
     "title": "Job Finder Esra",
-    "subtitle": "People Operations · Talent Acquisition · Dubai / Worldwide Remote · Verify UAE eligibility",
+    "subtitle": "Europe-first · Global remote · Dubai, UAE",
     "emoji": "🌍"
   },
   "keywords": {
@@ -67,9 +67,7 @@
       "people and culture remote",
       "talent acquisition remote",
       "recruitment manager remote",
-      "HR business partner remote",
-      "fractional HR remote",
-      "HR manager remote startup"
+      "HR business partner remote"
     ],
     "glassdoor": [
       "people operations remote",
@@ -77,9 +75,7 @@
       "people and culture remote",
       "talent acquisition remote",
       "recruitment manager remote",
-      "HR business partner remote",
-      "fractional HR remote",
-      "HR manager remote startup"
+      "HR business partner remote"
     ],
     "ziprecruiter": [
       "people operations remote",
@@ -87,9 +83,7 @@
       "people and culture remote",
       "talent acquisition remote",
       "recruitment manager remote",
-      "HR business partner remote",
-      "fractional HR remote",
-      "HR manager remote startup"
+      "HR business partner remote"
     ],
     "google_jobs": [
       "people operations remote",
@@ -97,9 +91,7 @@
       "people and culture remote",
       "talent acquisition remote",
       "recruitment manager remote",
-      "HR business partner remote",
-      "fractional HR remote",
-      "HR manager remote startup"
+      "HR business partner remote"
     ],
     "hiring_cafe": [
       "people operations remote",
@@ -119,39 +111,68 @@
   "locations": {
     "linkedin": [
       {
-        "name": "United Arab Emirates",
-        "location": "United Arab Emirates",
+        "name": "Europe",
+        "location": "Europe",
         "geoId": ""
       },
       {
-        "name": "EMEA",
-        "location": "EMEA",
-        "geoId": ""
+        "name": "United Kingdom",
+        "location": "United Kingdom",
+        "geoId": "101165590"
       },
       {
         "name": "Worldwide",
         "location": "Worldwide",
+        "geoId": ""
+      },
+      {
+        "name": "United Arab Emirates",
+        "location": "United Arab Emirates",
         "geoId": ""
       }
     ],
     "indeed": [
       {
         "location": "Remote",
-        "country": "United Arab Emirates"
+        "country": "GB"
       },
       {
         "location": "Remote",
-        "country": "UK"
+        "country": "Ireland"
+      },
+      {
+        "location": "Remote",
+        "country": "Germany"
+      },
+      {
+        "location": "Remote",
+        "country": "Netherlands"
+      },
+      {
+        "location": "Remote",
+        "country": "USA"
       }
     ],
     "glassdoor": [
       {
-        "location": "Dubai",
-        "country": "United Arab Emirates"
+        "location": "Remote",
+        "country": "GB"
       },
       {
-        "location": "London",
-        "country": "UK"
+        "location": "Remote",
+        "country": "Ireland"
+      },
+      {
+        "location": "Remote",
+        "country": "Germany"
+      },
+      {
+        "location": "Remote",
+        "country": "Netherlands"
+      },
+      {
+        "location": "Remote",
+        "country": "USA"
       }
     ],
     "ziprecruiter": [
@@ -163,11 +184,23 @@
     "google_jobs": [
       {
         "location": "Remote",
-        "country": "UK"
+        "country": "GB"
       },
       {
-        "location": "United Arab Emirates",
-        "country": "United Arab Emirates"
+        "location": "Remote",
+        "country": "Ireland"
+      },
+      {
+        "location": "Remote",
+        "country": "Germany"
+      },
+      {
+        "location": "Remote",
+        "country": "Netherlands"
+      },
+      {
+        "location": "Remote",
+        "country": "USA"
       }
     ],
     "hiring_cafe": [
@@ -187,12 +220,23 @@
     "terms": [
       "remote",
       "worldwide",
-      "anywhere",
       "global",
+      "europe",
+      "european union",
       "emea",
+      "united kingdom",
+      "uk",
+      "ireland",
+      "germany",
+      "netherlands",
+      "portugal",
+      "france",
+      "spain",
       "united arab emirates",
       "uae",
-      "dubai"
+      "dubai",
+      "united states",
+      "usa"
     ]
   },
   "google_jobs": {
