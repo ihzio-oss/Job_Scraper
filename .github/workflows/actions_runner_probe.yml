@@ -1,0 +1,13 @@
+name: Actions Runner Probe
+
+on:
+  push:
+    paths:
+      - ".github/workflows/actions_runner_probe.yml"
+  workflow_dispatch:
+
+jobs:
+  probe:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "GitHub-hosted runner started"
