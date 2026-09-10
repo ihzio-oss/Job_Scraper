@@ -134,7 +134,7 @@
     "indeed": [
       {
         "location": "Remote",
-        "country": "GB"
+        "country": "United Kingdom"
       },
       {
         "location": "Remote",
@@ -150,13 +150,13 @@
       },
       {
         "location": "Remote",
-        "country": "USA"
+        "country": "Worldwide"
       }
     ],
     "glassdoor": [
       {
         "location": "Remote",
-        "country": "GB"
+        "country": "United Kingdom"
       },
       {
         "location": "Remote",
@@ -172,7 +172,7 @@
       },
       {
         "location": "Remote",
-        "country": "USA"
+        "country": "Worldwide"
       }
     ],
     "ziprecruiter": [
@@ -184,7 +184,7 @@
     "google_jobs": [
       {
         "location": "Remote",
-        "country": "GB"
+        "country": "United Kingdom"
       },
       {
         "location": "Remote",
@@ -200,7 +200,7 @@
       },
       {
         "location": "Remote",
-        "country": "USA"
+        "country": "Worldwide"
       }
     ],
     "hiring_cafe": [
