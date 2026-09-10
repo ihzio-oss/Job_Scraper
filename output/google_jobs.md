@@ -1,6 +1,6 @@
-# 🔎 Google Jobs — Environmental / Toxicology Roles
-*Last updated: 2026-09-10 19:15 UTC*
+# 🔎 Google Jobs — Job Finder Esra Roles
+*Last updated: 2026-09-10 21:46 UTC*
 
-**0 new role(s)** since last run · 4 total in last 24h
+**0 new role(s)** since last run · 4 total in last 72h
 
 No new roles since the last run.
