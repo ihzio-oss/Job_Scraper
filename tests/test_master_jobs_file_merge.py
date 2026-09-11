@@ -1,5 +1,6 @@
 """Test _merge_into_all_jobs — master file merge with field preservation."""
 import json
+from datetime import date
 from scrape_jobs import _merge_into_all_jobs
 
 
@@ -48,6 +49,9 @@ def test_preserves_existing_fields_on_duplicate(tmp_output_dir, sample_all_jobs)
 def test_preserves_false_tag_on_duplicate(tmp_output_dir, sample_all_jobs):
     """Existing false-valued downstream fields must be preserved when merging a duplicate."""
     path = tmp_output_dir / "all_jobs.json"
+    # Keep the target duplicate inside the production 30-day retention window.
+    target = next(j for j in sample_all_jobs["jobs"] if j["url"].endswith("/4400000008/"))
+    target["date_posted"] = date.today().isoformat()
     path.write_text(json.dumps(sample_all_jobs, separators=(",", ":")))
 
     new_jobs = [
