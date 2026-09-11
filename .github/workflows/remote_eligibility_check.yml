@@ -26,11 +26,24 @@ jobs:
               ({"is_remote": True, "location": "Remote, United Kingdom", "work_arrangement": "Remote", "title": "People Ops", "description": "Remote in UK"}, True),
               ({"is_remote": True, "location": "Remote, Spain", "work_arrangement": "Remote", "title": "HR Manager", "description": "Remote in Spain"}, True),
               ({"is_remote": True, "location": "Worldwide", "work_arrangement": "Remote", "title": "People Ops", "description": "Work from anywhere"}, True),
-              ({"is_remote": True, "location": "Remote, Germany", "work_arrangement": "Remote", "title": "HR Assistant", "description": "Remote in Germany"}, False),
+              ({"is_remote": True, "location": "Remote, Germany", "work_arrangement": "Remote", "title": "HR Assistant", "description": "Remote in Germany"}, True),
           ]
           for job, expected in cases:
               actual = notify._is_eligible_remote(job)
               assert actual == expected, (job, actual, expected)
-          print("Remote eligibility checks passed")
+
+          # Eligibility and role relevance are deliberately separate: a remote HR
+          # Assistant is geographically valid, but should not create an alert.
+          assert not notify.relevance({
+              "is_remote": True, "location": "Remote, Germany",
+              "work_arrangement": "Remote", "title": "HR Assistant",
+              "description": "Remote in Germany",
+          })[0]
+          assert notify.relevance({
+              "is_remote": True, "location": "Remote, Spain",
+              "work_arrangement": "Remote", "title": "HR Manager",
+              "description": "Remote in Spain",
+          })[0]
+          print("Remote eligibility and Esra fit checks passed")
           PY
 # Trigger verification after adding this workflow.
