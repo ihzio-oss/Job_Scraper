@@ -52,6 +52,7 @@ def test_preserves_false_tag_on_duplicate(tmp_output_dir, sample_all_jobs):
     # Keep the target duplicate inside the production 30-day retention window.
     target = next(j for j in sample_all_jobs["jobs"] if j["url"].endswith("/4400000008/"))
     target["date_posted"] = date.today().isoformat()
+    target["first_seen"] = f"{date.today().isoformat()}T00:00:00Z"
     path.write_text(json.dumps(sample_all_jobs, separators=(",", ":")))
 
     new_jobs = [
