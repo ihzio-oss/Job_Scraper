@@ -48,61 +48,47 @@ DASHBOARD_URL = (
 MAX_PUSHES_PER_RUN = 8     # cap individual pings; the rest get one summary
 NOTIFIED_KEEP = 600        # remember this many recent jobs to avoid repeats
 
-# Priority-topic stars — keep in sync with STAR_TERMS in triage.html.
+# Esra's priority areas.  These are intentionally role-specific so the
+# notification threshold does not turn generic office roles into alerts.
 STAR_TERMS = [
-    ("microplastics", re.compile(r'microplastic|nanoplastic|microfiber', re.I)),
-    ("ecotoxicology", re.compile(r'ecotoxicolog', re.I)),
-    ("endocrine-disrupting chemicals", re.compile(r'endocrine[\s-]?disrupt|\bedcs?\b', re.I)),
-    ("R/Shiny", re.compile(r'\brshiny\b|\br[\s-]?shiny\b|shiny\s*(?:app|dashboard|server)|\bshiny\b', re.I)),
+    ("People Operations", re.compile(r'\bpeople\s+operations?\b|\bpeople\s+ops\b', re.I)),
+    ("Talent Acquisition", re.compile(r'\btalent\s+acquisition\b|\btalent\s+partner\b', re.I)),
+    ("People & Culture", re.compile(r'\bpeople\s+(?:&|and)\s+culture\b', re.I)),
+    ("HR Business Partner", re.compile(r'\bhrbp\b|\bhr\s+business\s+partner\b|\bhuman\s+resources\s+business\s+partner\b', re.I)),
 ]
 
-# Compact resume-fit. Title counts x3, but broad title-only hits are capped and
-# poor-fit role families are penalized so weekly "standouts" do not overstate
-# generic consulting/compliance matches when scores.json is empty.
+# Compact resume-fit for Esra's search.  Title matches carry more weight, while
+# ordinary HR admin/payroll work is penalized to avoid noisy Telegram alerts.
 FIT_TERMS = [
-    (re.compile(r'microplastic|nanoplastic|plastic pollution', re.I), 12),
-    (re.compile(r'ecotoxicolog', re.I), 12),
-    (re.compile(r'human health risk|ecological risk|risk character', re.I), 11),
-    (re.compile(r'\brisk assess', re.I), 7),
-    (re.compile(r'\bexposure\b|exposure assess|exposure scien', re.I), 10),
-    (re.compile(r'\bqsar\b|read-across', re.I), 11),
-    (re.compile(r'\bpfas\b|perfluoro|per- and polyfluoro', re.I), 10),
-    (re.compile(r'toxicolog', re.I), 8),
-    (re.compile(r'pharmacokinetic|toxicokinetic|\bpbpk\b', re.I), 8),
-    (re.compile(r'dose.response|benchmark dose', re.I), 7),
-    (re.compile(r'computational tox|predictive tox|new approach method|\bnam\b|in vitro|high.throughput', re.I), 8),
-    (re.compile(r'emerging contaminant|\bcec\b|contaminant|pollutant', re.I), 6),
-    (re.compile(r'drinking water|water quality', re.I), 7),
-    (re.compile(r'hazard assess', re.I), 6),
-    (re.compile(r'endocrine|bioaccumulat|sediment|aquatic|marine|estuar', re.I), 5),
-    (re.compile(r'environmental health|environmental chemist|environmental scien', re.I), 4),
-    (re.compile(r'regulatory|policy|standard setting|guidance', re.I), 4),
-    (re.compile(r'data scien|machine learning|\bshiny\b|\br programming\b|biostatistic|modeling|modelling', re.I), 4),
-    (re.compile(r'cheminformatic|chemical safety|chemical risk|product steward', re.I), 5),
+    (re.compile(r'\bpeople\s+operations?\b|\bpeople\s+ops\b', re.I), 18),
+    (re.compile(r'\bhr\s+operations?\b|\bhuman\s+resources\s+operations?\b', re.I), 18),
+    (re.compile(r'\bpeople\s+(?:&|and)\s+culture\b', re.I), 17),
+    (re.compile(r'\btalent\s+acquisition\b|\btalent\s+partner\b', re.I), 17),
+    (re.compile(r'\brecruit(?:ment|ing)\s+(?:manager|lead|operations?)\b', re.I), 16),
+    (re.compile(r'\bhrbp\b|\bhr\s+business\s+partner\b|\bhuman\s+resources\s+business\s+partner\b', re.I), 16),
+    (re.compile(r'\b(?:hr|human\s+resources)\s+(?:manager|lead)\b', re.I), 13),
+    (re.compile(r'\bemployee\s+(?:experience|lifecycle|relations)\b', re.I), 10),
+    (re.compile(r'\bhris\b|\bpeople\s+systems?\b|\bworkday\b|\bbamboohr\b', re.I), 8),
+    (re.compile(r'\bdistributed\s+teams?\b|\bremote[- ]first\b|\binternational\s+hr\b|\bcross[- ]border\b', re.I), 7),
 ]
 
 SIGNATURE_TERMS = [
     re.compile(p, re.I) for p in [
-        r'microplastic|nanoplastic|plastic pollution|ecotoxicolog',
-        r'endocrine[\s-]?disrupt|\bedcs?\b',
-        r'\bqsar\b|read-across|structure.activity|cheminformatic',
-        r'computational tox|predictive tox|new approach method|\bnam\b',
-        r'pharmacokinetic|toxicokinetic|\bpbpk\b|dose.response|benchmark dose',
-        r'\bexposure\b|exposure assess|exposure scien',
-        r'human health risk|ecological risk|hazard assess|chemical risk',
-        r'\bshiny\b|\br programming\b|data scien|machine learning',
+        r'\bpeople\s+operations?\b|\bpeople\s+ops\b',
+        r'\bhr\s+operations?\b|\bhuman\s+resources\s+operations?\b',
+        r'\bpeople\s+(?:&|and)\s+culture\b',
+        r'\btalent\s+acquisition\b|\btalent\s+partner\b',
+        r'\brecruit(?:ment|ing)\s+(?:manager|lead|operations?)\b',
+        r'\bhrbp\b|\bhr\s+business\s+partner\b',
+        r'\b(?:hr|human\s+resources)\s+(?:manager|lead)\b',
     ]
 ]
 
 POOR_FIT_TERMS = [
-    (re.compile(r'occupational hygiene|industrial hygien|environmental health safety|\behs\b|health safety', re.I), 36),
-    (re.compile(r'customer risk|credit risk|operations risk|operational risk|financial risk|banking|change lead', re.I), 45),
-    (re.compile(r'risk assessment and operations', re.I), 32),
-    (re.compile(r'staff research associate|research associate', re.I), 32),
-    (re.compile(r'contaminated land|remediation|field oversight|hazardous building materials|stormwater', re.I), 24),
-    (re.compile(r'\bwater treatment\b|utilities operations|electrician|air quality project', re.I), 18),
-    (re.compile(r'\bprincipal\b|practice lead|senior manager|director\b|supervisor', re.I), 14),
-    (re.compile(r'clinical|forensic|pharmacologist|physiologist|pharmaceutical|pharmaron|biocompat', re.I), 35),
+    (re.compile(r'\bintern(ship)?\b|\btrainee\b|\bapprentice\b', re.I), 45),
+    (re.compile(r'\bhr\s+assistant\b|\bhuman\s+resources\s+assistant\b|\bhr\s+administrator\b', re.I), 35),
+    (re.compile(r'\bpayroll\b|\bcompensation\s+and\s+benefits\b', re.I), 22),
+    (re.compile(r'\bon[- ]site\b|\bhybrid\b', re.I), 40),
 ]
 
 DEFAULT_SCORING_SETTINGS = {
