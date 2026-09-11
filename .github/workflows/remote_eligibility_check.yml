@@ -1,0 +1,33 @@
+name: Remote Eligibility Check
+
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - notify.py
+      - .github/workflows/remote_eligibility_check.yml
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - name: Verify eligibility rules
+        run: |
+          python -m py_compile notify.py
+          python - <<'PY'
+          import notify
+          cases = [
+              ({"is_remote": False, "location": "London, United Kingdom", "work_arrangement": "On-site", "title": "HR Manager", "description": ""}, False),
+              ({"is_remote": True, "location": "New York, United States", "work_arrangement": "Remote", "title": "HR Manager", "description": ""}, False),
+              ({"is_remote": True, "location": "Remote, United Kingdom", "work_arrangement": "Remote", "title": "People Ops", "description": "Remote in UK"}, True),
+              ({"is_remote": True, "location": "Worldwide", "work_arrangement": "Remote", "title": "People Ops", "description": "Work from anywhere"}, True),
+          ]
+          for job, expected in cases:
+              actual = notify._is_eligible_remote(job)
+              assert actual == expected, (job, actual, expected)
+          print("Remote eligibility checks passed")
+          PY
