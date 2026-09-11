@@ -1,91 +1,88 @@
 # 🔥 LinkedIn — Job Finder Esra Roles
-*Last updated: 2026-09-11 00:58 UTC*
+*Last updated: 2026-09-11 01:50 UTC*
 
-**19 new role(s)** since last run · 62 total in last 72h
+**18 new role(s)** since last run · 61 total in last 72h
 
-### [Principal HR Business Partner - Tech](https://www.linkedin.com/jobs/view/4466004160/) — hims & hers
-- 📍 **Location:** United States
+### [People Business Partner](https://www.linkedin.com/jobs/view/4464806934/) — Sage
+- 📍 **Location:** Thousand Oaks, CA
+- 💰 **Salary:** $110,000.00/yr - $120,000.00/yr
 - 🕒 **Posted:** 2026-09-11
 
-### [Human Resources Business Partner (Remote)](https://www.linkedin.com/jobs/view/4465880898/) — Elevar Therapeutics
-- 📍 **Location:** United States
-- 💰 **Salary:** $180,000 - $220,000
-- 🕒 **Posted:** 2026-09-10
-
-### [Talent Acquisition Specialist](https://www.linkedin.com/jobs/view/4465833983/) — The Health Institute
-- 📍 **Location:** Tennessee, United States
-- 💰 **Salary:** $60,000 - $70,000
-- 🕒 **Posted:** 2026-09-10
-
-### [Recruiting Manager, Global Operations](https://www.linkedin.com/jobs/view/4465394077/) — Airbnb
-- 📍 **Location:** California, United States
-- 💰 **Salary:** $160,000—$200,000 USD
-- 🕒 **Posted:** 2026-09-10
-
-### [Recruiting Manager, Foundation Americas](https://www.linkedin.com/jobs/view/4463905398/) — TalentHop
-- 📍 **Location:** United States
-- 🕒 **Posted:** 2026-09-10
-
-### [Talent Acquisition Partner, EPM](https://www.linkedin.com/jobs/view/4463908143/) — Thought Logic Consulting
-- 📍 **Location:** Georgia, United States
-- 🕒 **Posted:** 2026-09-10
-
-### [HR Business Partner](https://www.linkedin.com/jobs/view/4463927249/) — Umano Medical
-- 📍 **Location:** United States
-- 🕒 **Posted:** 2026-09-10
-
-### [Director, HR Business Partner](https://www.linkedin.com/jobs/view/4465810233/) — Clario
-- 📍 **Location:** United States
-- 🕒 **Posted:** 2026-09-10
-
-### [Human Resources Manager (Remote)](https://www.linkedin.com/jobs/view/4465674749/) — Quik Hire Staffing
-- 📍 **Location:** United States
-- 💰 **Salary:** $10 - $36/hour
-- 🕒 **Posted:** 2026-09-10
-
-### [People Ops Manager [Temp]](https://www.linkedin.com/jobs/view/4465684833/) — EngFlow
+### [People Operations Coordinator](https://www.linkedin.com/jobs/view/4463498652/) — Gymshark
 - 📍 **Location:** New York, NY
+- 💰 **Salary:** $69,000-$86,500
 - 🕒 **Posted:** 2026-09-10
 
-### [People Business Partner, Labs](https://www.linkedin.com/jobs/view/4463047953/) — DoorDash
+### [Corporate Talent Acquisition Specialist](https://www.linkedin.com/jobs/view/4463494395/) — TalentHop
 - 📍 **Location:** United States
-- 💰 **Salary:** $136,000—$200,000 USD
+- 💰 **Salary:** $55,000 to $65,000 annually
+- 🕒 **Posted:** 2026-09-10
+
+### [Senior Talent Acquisition Specialist](https://www.linkedin.com/jobs/view/4409806906/) — Vultr
+- 📍 **Location:** United States
+- 💰 **Salary:** $75,000 - $95,000
+- 🕒 **Posted:** 2026-09-10
+
+### [Talent Acquisition Partner (Product, Data, & Engineering)](https://www.linkedin.com/jobs/view/4441577178/) — Stord
+- 📍 **Location:** United States
+- 🕒 **Posted:** 2026-09-10
+
+### [Human Resources Business Partner](https://www.linkedin.com/jobs/view/4464527978/) — SoTalent
+- 📍 **Location:** Illinois, United States
+- 💰 **Salary:** $75,000–$110,000 per year
+- 🕒 **Posted:** 2026-09-10
+
+### [Human Resources Business Partner](https://www.linkedin.com/jobs/view/4464500214/) — Jobgether
+- 📍 **Location:** United States
+- 💰 **Salary:** $115,000–$125,000,
+- 🕒 **Posted:** 2026-09-10
+
+### [Human Resources Manager](https://www.linkedin.com/jobs/view/4464173241/) — Ministry HR Group
+- 📍 **Location:** United States
+- 🕒 **Posted:** 2026-09-10
+
+### [Human Resources Operations Manager](https://www.linkedin.com/jobs/view/4463490817/) — TalentHop
+- 📍 **Location:** United States
+- 💰 **Salary:** $110,000–$140,000,
+- 🕒 **Posted:** 2026-09-10
+
+### [HR Generalist & Talent Acquisition Specialist](https://www.linkedin.com/jobs/view/4454077030/) — Spotlight Media
+- 📍 **Location:** United States
+- 💰 **Salary:** $50,000.00/yr - $65,500.00/yr
 - 🕒 **Posted:** 2026-09-09
 
-### [Sr Manager, Talent Acquisition](https://www.linkedin.com/jobs/view/4464116929/) — PAR Technology
-- 📍 **Location:** Georgia, United States
-- 💰 **Salary:** $100K - $150K
+### [Talent Acquisition Partner - Product](https://www.linkedin.com/jobs/view/4463890659/) — Applied Systems
+- 📍 **Location:** United States
 - 🕒 **Posted:** 2026-09-09
 
-### [People Operations Generalist](https://www.linkedin.com/jobs/view/4463228721/) — Jobgether
-- 📍 **Location:** United States
-- 💰 **Salary:** $150,000–$180,000 USD
-- 🕒 **Posted:** 2026-09-08
+### [Talent Acquisition Operations Excellence Leader](https://www.linkedin.com/jobs/view/4463577933/) — Cummins Inc.
+- 📍 **Location:** Indianapolis, IN
+- 🕒 **Posted:** 2026-09-09
 
-### [People Operations Lead](https://www.linkedin.com/jobs/view/4462548593/) — Edra
-- 📍 **Location:** New York, NY
-- 💰 **Salary:** $150,000.00/yr - $185,000.00/yr
-- 🕒 **Posted:** 2026-09-08
-
-### [Senior Professional, HRBP](https://www.linkedin.com/jobs/view/4458028575/) — Gainwell Technologies
-- 📍 **Location:** Indiana, United States
-- 💰 **Salary:** $63,400.00 - $90,600.00 per year
-- 🕒 **Posted:** 2026-09-08
-
-### [Talent Acquisition Operations Partner](https://www.linkedin.com/jobs/view/4463560629/) — ModMed
-- 📍 **Location:** United States
-- 🕒 **Posted:** 2026-09-08
-
-### [Talent Acquisition Operations Specialist](https://www.linkedin.com/jobs/view/4452522478/) — Regal Rexnord
+### [Talent Acquisition Partner - Sales](https://www.linkedin.com/jobs/view/4452537463/) — Regal Rexnord
 - 📍 **Location:** Milwaukee, WI
 - 🕒 **Posted:** 2026-09-08
 
-### [Manager, Talent Acquisition](https://www.linkedin.com/jobs/view/4462295613/) — Ladders
+### [Talent Acquisition Partner](https://www.linkedin.com/jobs/view/4455346756/) — The Campbell's Company
 - 📍 **Location:** United States
-- 💰 **Salary:** $123,000.00/yr - $164,000.00/yr
+- 💰 **Salary:** $68,600-$94,300
 - 🕒 **Posted:** 2026-09-08
 
-### [Human Resources Business Partner](https://www.linkedin.com/jobs/view/4462291652/) — Ladders
+### [Talent Acquisition Specialist](https://www.linkedin.com/jobs/view/4462283709/) — Ladders
 - 📍 **Location:** United States
-- 💰 **Salary:** $130,000.00/yr - $160,000.00/yr
+- 💰 **Salary:** $100,000.00/yr - $125,000.00/yr
+- 🕒 **Posted:** 2026-09-08
+
+### [HR Business Partner, Corporate (Remote)](https://www.linkedin.com/jobs/view/4462289718/) — Ladders
+- 📍 **Location:** United States
+- 💰 **Salary:** $110,800.00/yr - $166,100.00/yr
+- 🕒 **Posted:** 2026-09-08
+
+### [Talent Acquisition Partner (Contract)](https://www.linkedin.com/jobs/view/4455301689/) — Artefact
+- 📍 **Location:** New York, NY
+- 🕒 **Posted:** 2026-09-08
+
+### [Human Resources Manager](https://www.linkedin.com/jobs/view/4464667045/) — Aux Talent
+- 📍 **Location:** New York, NY
+- 💰 **Salary:** $130,000.00/yr - $185,000.00/yr
 - 🕒 **Posted:** 2026-09-08
