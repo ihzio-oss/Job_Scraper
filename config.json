@@ -329,7 +329,7 @@
     ]
   },
   "notify": {
-    "min_fit": 75,
+    "min_fit": 60,
     "weekly_digest": {
       "enabled": false,
       "days": 7
