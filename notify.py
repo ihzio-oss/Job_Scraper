@@ -103,10 +103,15 @@ _SCORING_PROFILE: dict | None = None
 
 
 def _min_fit() -> int:
+    # A repository variable can override this without a code change; otherwise
+    # use the profile's configured threshold rather than the upstream default.
+    raw = os.environ.get("NOTIFY_MIN_FIT")
+    if raw is None:
+        raw = _load_config().get("notify", {}).get("min_fit", 60)
     try:
-        return int(os.environ.get("NOTIFY_MIN_FIT", "75"))
-    except ValueError:
-        return 75
+        return max(0, min(100, int(raw)))
+    except (TypeError, ValueError):
+        return 60
 
 
 def _truthy(value: str | None) -> bool:
