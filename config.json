@@ -114,6 +114,31 @@
         "name": "United Kingdom",
         "location": "United Kingdom",
         "geoId": "101165590"
+      },
+      {
+        "name": "Amsterdam",
+        "location": "Amsterdam, Netherlands",
+        "geoId": ""
+      },
+      {
+        "name": "Germany",
+        "location": "Germany",
+        "geoId": ""
+      },
+      {
+        "name": "Hungary",
+        "location": "Hungary",
+        "geoId": ""
+      },
+      {
+        "name": "Spain",
+        "location": "Spain",
+        "geoId": ""
+      },
+      {
+        "name": "Portugal",
+        "location": "Portugal",
+        "geoId": ""
       }
     ],
     "indeed": [
@@ -221,7 +246,9 @@
       "uae",
       "dubai",
       "united states",
-      "usa"
+      "usa",
+      "amsterdam",
+      "hungary"
     ]
   },
   "google_jobs": {
