@@ -2,7 +2,12 @@
 
 Uses a real LinkedIn posting page saved as a fixture.
 """
-from scrape_jobs import _linkedin_description_from_page, LINKEDIN_DESCRIPTION_MAX_CHARS
+import scrape_jobs
+from scrape_jobs import (
+    _linkedin_description_from_page,
+    _linkedin_posting_details,
+    LINKEDIN_DESCRIPTION_MAX_CHARS,
+)
 
 
 def test_extracts_description_from_real_page(linkedin_job_posting_html):
@@ -60,3 +65,30 @@ def test_description_truncated_at_max():
     '''
     desc = _linkedin_description_from_page(html)
     assert len(desc) <= LINKEDIN_DESCRIPTION_MAX_CHARS
+
+
+def test_extracts_euro_salary_range_from_description(monkeypatch):
+    html = """
+    <section>
+      <div class="show-more-less-html__markup">
+        <p>Corporate Recruiter role. Salary: €3.800 – €5.000 monthly.</p>
+      </div>
+    </section>
+    """
+    monkeypatch.setattr(scrape_jobs, "fetch", lambda _url: html)
+    salary, description = _linkedin_posting_details("123")
+    assert salary == "€3.800 – €5.000 monthly"
+    assert "Corporate Recruiter" in description
+
+
+def test_extracts_pound_salary_range_from_description(monkeypatch):
+    html = """
+    <section>
+      <div class="show-more-less-html__markup">
+        <p>People Operations Manager. £45k to £60k annually.</p>
+      </div>
+    </section>
+    """
+    monkeypatch.setattr(scrape_jobs, "fetch", lambda _url: html)
+    salary, _ = _linkedin_posting_details("456")
+    assert salary == "£45k to £60k annually"
