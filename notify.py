@@ -307,12 +307,12 @@ def _fit(title: str, body: str) -> int:
 def _is_eligible_remote(job: dict) -> bool:
     """Allow only genuinely remote jobs that explicitly permit Esra's geographies."""
     arrangement = " ".join(str(job.get(k, "") or "") for k in ("work_arrangement", "location"))
-    if not (job.get("is_remote") or re.search(r"\\bremote\\b", arrangement, re.I)):
+    if not (job.get("is_remote") or re.search(r"\bremote\b", arrangement, re.I)):
         return False
 
     text = " ".join(str(job.get(k, "") or "") for k in ("title", "location", "description", "work_arrangement"))
     # Country-locked roles are not usable from Dubai/Europe, even when labelled remote.
-    if re.search(r"\\b(united states|usa|u\\.?s\\.?|canada|australia)\\b", text, re.I):
+    if re.search(r"\b(united states|usa|u\.?s\.?|canada|australia)\b", text, re.I):
         return False
 
     # "Global operations" is not eligibility. Require an explicit eligible work region.
