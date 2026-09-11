@@ -875,6 +875,17 @@ def _linkedin_posting_details(job_id: str) -> tuple[str, str]:
     # Fallback: salary range embedded in description text.
     text = re.sub(r'\s+', ' ', html_mod.unescape(re.sub(r'<[^>]+>', ' ', page)))
 
+    # European ranges. Handles both thousands conventions, for example
+    # "€3.800 – €5.000", "€55,000 - €70,000" and "£45k to £60k".
+    sal_m = re.search(
+        r'(?:(?:EUR|GBP)\s*)?[€£]\s*\d[\d.,]*(?:\s*[kK])?\s*(?:to|[–—-])\s*'
+        r'(?:(?:EUR|GBP)\s*)?[€£]\s*\d[\d.,]*(?:\s*[kK])?'
+        r'(?:\s*(?:per\s+\w+|annually|hourly|monthly|/\w+))?',
+        text, re.I,
+    )
+    if sal_m:
+        return re.sub(r'\s+', ' ', sal_m.group(0)).strip(), description
+
     # Pattern 1: two-dollar-sign range with optional USD codes and en/em dashes.
     # Handles: "$130k to $176k", "$7,820 – $10,732", "$75,000 USD - $85,000 USD",
     #          "USD $200,000 - USD $300,000"
