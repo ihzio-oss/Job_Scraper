@@ -5,6 +5,7 @@ on:
   push:
     paths:
       - notify.py
+      - scoring_profile.json
       - .github/workflows/remote_eligibility_check.yml
 
 jobs:
