@@ -1,7 +1,7 @@
 {
-  "scraped_at": "2026-09-11 15:58 UTC",
+  "scraped_at": "2026-09-11 19:00 UTC",
   "total": 2,
-  "new_count": 1,
+  "new_count": 0,
   "jobs": [
     {
       "company": "Dwelly",
@@ -40,24 +40,5 @@
       "ats": "Indeed"
     }
   ],
-  "new_jobs": [
-    {
-      "company": "Brit Leelaa",
-      "title": "HR Manager",
-      "location": "Remote, GB",
-      "url": "https://uk.indeed.com/viewjob?jk=bd212c00939068e5",
-      "direct_url": "http://uk.indeed.com/job/hr-manager-bd212c00939068e5",
-      "company_url": "https://uk.indeed.com/cmp/Brit-Leelaa-2",
-      "date_posted": "2026-09-09",
-      "description": "**Job Summary**\n\nWe are seeking a dynamic and strategic HR Manager to lead our human resources initiatives and foster a positive, productive workplace environment. In this pivotal role, you will oversee all aspects of HR operations, including talent acquisition, employee relations, performance management, and compliance. Your expertise will drive organizational growth by implementing innovative HR strategies, managing HRIS systems, and ensuring that our human resources practices align with company goals. This position offers an exciting opportunity to influence company culture, develop leadership capabilities, and support employee success across all levels.\n\n**Responsibilities**\n\n* Develop and execute comprehensive HR strategies that support business objectives and promote a high\\-performance culture.\n* Oversee the recruitment process from job posting to onboarding, utilizing ATS (Applicant Tracking Systems) such as Taleo or Workday to streamline hiring workflows.\n* Manage employee relations by addressing concerns, resolving conflicts, and fostering open communication channels through effective presentation and communication skills.\n* Supervise HR team members and coordinate training programs to enhance their professional development and ensure consistent HR practices across departments.\n* Maintain and optimize HRIS platforms like PeopleSoft or Workday for accurate data management, reporting, and compliance tracking.\n* Conduct data analysis on workforce metrics to identify trends, inform decision\\-making, and improve HR processes.\n* Ensure compliance with employment laws and company policies while managing documentation related to human resources activities.\n\n**Skills**\n\n* Proven management experience with the ability to supervise teams effectively in a fast\\-paced environment.\n* Strong knowledge of human resources principles, employment law, and best practices in talent management.\n* Extensive experience with HRIS systems such as Workday, PeopleSoft, or Taleo; familiarity with ATS platforms is essential.\n* Excellent communication skills for engaging presentations, negotiations, and fostering positive employee relations.\n* Data analysis skills to interpret workforce data and generate actionable insights for strategic planning.\n* Demonstrated proficiency in managing multiple projects simultaneously while maintaining attention to detail.\n* Ability to adapt quickly to changing priorities and implement innovative solutions within HR functions.\n\nJoin us as an HR Manager where your leadership will shape our workplace culture! We’re committed to empowering our people through meaningful work experiences and comprehensive support systems that promote growth and well\\-being.\n\nPay: £37,000\\.00\\-£46,000\\.00 per year\n\nBenefits:\n\n* UK visa sponsorship\n* Work from home\n\nWork Location: Remote",
-      "salary": "",
-      "salary_source": "",
-      "salary_currency": "",
-      "job_type": "fulltime",
-      "is_remote": true,
-      "work_arrangement": "Remote in-state eligible",
-      "emails": "",
-      "ats": "Indeed"
-    }
-  ]
+  "new_jobs": []
 }
