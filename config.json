@@ -111,24 +111,9 @@
   "locations": {
     "linkedin": [
       {
-        "name": "Europe",
-        "location": "Europe",
-        "geoId": ""
-      },
-      {
         "name": "United Kingdom",
         "location": "United Kingdom",
         "geoId": "101165590"
-      },
-      {
-        "name": "Worldwide",
-        "location": "Worldwide",
-        "geoId": ""
-      },
-      {
-        "name": "United Arab Emirates",
-        "location": "United Arab Emirates",
-        "geoId": ""
       }
     ],
     "indeed": [
