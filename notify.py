@@ -318,8 +318,8 @@ def _is_eligible_remote(job: dict) -> bool:
     # "Global operations" is not eligibility. Require an explicit eligible work region.
     return bool(re.search(
         r"worldwide|work from anywhere|anywhere in the world|"
-        r"remote (?:in|across|within) (?:europe|emea|the eu|eu|uk|united kingdom|uae|dubai)|"
-        r"(?:europe|emea|the eu|eu|uk|united kingdom|uae|dubai)[ -]?(?:based )?remote",
+        r"remote (?:in|across|within) (?:europe|emea|the eu|eu|uk|united kingdom|uae|dubai|netherlands|amsterdam|germany|hungary|spain|portugal)|"
+        r"(?:europe|emea|the eu|eu|uk|united kingdom|uae|dubai|netherlands|amsterdam|germany|hungary|spain|portugal)[ -]?(?:based )?remote",
         text, re.I,
     ))
 
