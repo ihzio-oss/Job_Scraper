@@ -31,3 +31,4 @@ jobs:
               assert actual == expected, (job, actual, expected)
           print("Remote eligibility checks passed")
           PY
+# Trigger verification after adding this workflow.
