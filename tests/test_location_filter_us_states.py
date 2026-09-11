@@ -55,8 +55,8 @@ def test_remote_united_states():
     assert is_target_location("Remote, United States") is True
 
 
-def test_hybrid():
-    assert is_target_location("Hybrid - Austin, TX") is True
+def test_hybrid_is_not_remote():
+    assert is_target_location("Hybrid - Austin, TX") is False
 
 
 @pytest.mark.parametrize("location", INTERNATIONAL)
