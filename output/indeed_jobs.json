@@ -1,7 +1,7 @@
 {
-  "scraped_at": "2026-09-12 02:57 UTC",
+  "scraped_at": "2026-09-12 03:56 UTC",
   "total": 4,
-  "new_count": 1,
+  "new_count": 0,
   "jobs": [
     {
       "company": "Unknown",
@@ -76,24 +76,5 @@
       "ats": "Indeed"
     }
   ],
-  "new_jobs": [
-    {
-      "company": "Ikigaienablers",
-      "title": "Talent Acquisition Executive (Freelance)",
-      "location": "Werk van thuis, NL",
-      "url": "https://nl.indeed.com/viewjob?jk=8f4c23ffc12e02a8",
-      "direct_url": "http://nl.indeed.com/job/talent-acquisition-executive-freelance-8f4c23ffc12e02a8",
-      "company_url": "https://nl.indeed.com/cmp/Ikigaienablers",
-      "date_posted": "2026-09-09",
-      "description": "**Talent Acquisition Executive – Freelance**\n\n**Location:** Europe – Remote  \n**Job Type:** Freelance / Contract  \n**Work Mode:** Remote  \n**Compensation:** Open for Discussion\n\n**Job Description**\n\nLooking for an experienced **Talent Acquisition Executive / Freelance Recruiter** to support our recruitment activities across the **European region**.\n\nThe ideal candidate will have strong experience in **commercial recruitment**, particularly for **Sales, Business Development and Pre\\-Sales** positions within the **SaaS, Software Sales or IT Services** sectors.\n\nYou will be responsible for sourcing, engaging, assessing and coordinating with qualified commercial talent across Europe and managing recruitment activities from sourcing through closure.\n\n**Key Responsibilities**\n\n* Manage **end\\-to\\-end recruitment** for Sales, Business Development and Pre\\-Sales positions.\n* Develop and execute effective **candidate sourcing strategies** across European markets.\n* Conduct talent mapping and identify high\\-quality commercial professionals.\n* Source candidates through LinkedIn, job portals, professional networks and other relevant channels.\n* Screen and assess candidates based on role requirements, experience and commercial capabilities.\n* Engage and build relationships with prospective candidates across Europe.\n* Coordinate interviews and recruitment processes with internal stakeholders.\n* Maintain candidate pipelines and provide regular recruitment updates.\n* Support successful offer management and candidate closure.\n\n**Requirements**\n\n* **4\\+ years of recruitment experience within the EU/European region.**\n* Proven experience recruiting for **Sales, Business Development and Pre\\-Sales** roles.\n* Experience in **SaaS, Software Sales or IT Services recruitment** is preferred.\n* Strong **sourcing and talent\\-mapping** capabilities.\n* Demonstrated experience managing **end\\-to\\-end recruitment**.\n* Ability to identify, engage and assess strong **commercial talent across Europe**.\n* **Fluent English is mandatory.**\n* Strong communication, candidate engagement and stakeholder\\-management skills.\n* **French, German or Spanish** language skills will be an advantage.\n\n**What We Offer**\n\n* **Remote / Work from Anywhere in Europe**\n* **Freelance engagement**\n* Flexible working arrangement\n* Opportunity to work on **European commercial hiring mandates**\n* Compensation **open for discussion**, based on experience and engagement model\n\n**Preferred Job Titles / Keywords**\n\nTalent Acquisition Executive, Talent Acquisition Specialist, Recruiter, Recruitment Consultant, Talent Acquisition Partner, Freelance Recruiter, Sales Recruiter, IT Recruiter, Technical Recruiter, SaaS Recruiter, European Recruiter.\n\nJob Type: Contract\n\nPay: €2\\.498,33 \\- €8\\.214,08 per month\n\nApplication Question(s):\n\n* Authorized to work in Europe\n* Do you have 4\\+ years of professional recruitment experience specifically covering the EU/European region?\n* Are you currently based in Europe / the EU region?\n* Do you have experience recruiting for Sales, Presales and or Business Development roles?\n* Are you fluent in English?\n* Which European language(s) do you speak fluently?\n* Mention your current, expected salary\n\nWork Location: Remote",
-      "salary": "",
-      "salary_source": "",
-      "salary_currency": "",
-      "job_type": "",
-      "is_remote": true,
-      "work_arrangement": "Remote in-state eligible",
-      "emails": "",
-      "ats": "Indeed"
-    }
-  ]
+  "new_jobs": []
 }
