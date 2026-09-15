@@ -1,7 +1,7 @@
 {
-  "scraped_at": "2026-09-15 16:59 UTC",
+  "scraped_at": "2026-09-15 17:54 UTC",
   "total": 1,
-  "new_count": 1,
+  "new_count": 0,
   "jobs": [
     {
       "company": "Unknown",
@@ -22,24 +22,5 @@
       "ats": "Indeed"
     }
   ],
-  "new_jobs": [
-    {
-      "company": "Unknown",
-      "title": "Student Recruitment Manager (m/w/d)",
-      "location": "Home Office, DE",
-      "url": "https://de.indeed.com/viewjob?jk=681fd29c62a49afe",
-      "direct_url": "https://t.gohiring.com/h/3b67b9b0b24186167d329049b03f55ef29a74d24fab338be70bf1aefa57dc929?source=Indeed",
-      "company_url": "",
-      "date_posted": "2026-09-15",
-      "description": "#### **Merkmale**\n\n* Befristeter Arbeitsvertrag (zunächst für zwei Jahre)\n* Vollzeit oder Teilzeit\n* Vollständig remote aus Deutschland oder hybrides Arbeiten an unseren Standorten in Hannover, München oder Leipzig\n* Veröffentlicht am 21\\.08\\.2026\n* Bewerbungsfrist: 31\\.12\\.2026\n* Frühestmöglicher Starttermin: Q2 2028\n\n#### **Über uns**\n\n\nvelpTEC ist ein auf innovative Technologien ausgerichtetes Bildungsinstitut, das Erfahrungen aus Wirtschaft, Zukunftsforschung und neuen Bildungsansätzen verbindet. Wir unterstützen Menschen durch unsere Bildungsangebote praxisnah dabei, ihre Fähigkeiten für künftige Zeiten zu stärken und damit aktiv ihren Lebensweg zu gestalten – ab 2028 auch im Hochschulbereich.  \n\n  \n\nDie VTH – University of Applied Sciences in Gründung ist eine private Hochschule für angewandte Wissenschaften, die aktuell ihren Prozess zur staatlichen Anerkennung durch das Niedersächsische Ministerium für Wissenschaft und Kultur durchläuft. Unsere Studiengänge starten in den Bereichen digitale Technologien, Ingenieurwesen und innovationsgetriebenes Management – mit dem klaren Anspruch, unser Portfolio kontinuierlich zu erweitern und auf neue Entwicklungen zu reagieren. Wir verstehen Lehre als Raum zur Gestaltung von Lösungen für morgen. Unser Ansatz ist projektbasiert, kompetenzorientiert und eng mit der Praxis verzahnt. Wir suchen Persönlichkeiten, die Lust haben, neue Wege in der Hochschulbildung zu gehen und unser innovatives Lernumfeld aktiv mitgestalten möchten.\n\n#### **Was deine Aufgaben sein werden**\n\n* Entwicklung und Umsetzung von Maßnahmen zur Studierendenrekrutierung\n* Persönliche, telefonische und digitale Beratung von Studieninteressierten\n* Begleitung des gesamten Bewerbungs\\- und Entscheidungsprozesses bis zur Immatrikulation\n* Planung und Durchführung von Hochschulinformationstagen, Webinaren, Messen und Informationsveranstaltungen\n* Präsentation der Hochschule bei Schulen, Unternehmen und externen Veranstaltungen\n* Aufbau und Pflege von Kooperationen mit Schulen, Unternehmen und weiteren Bildungspartnern\n* Pflege und Nachverfolgung von Interessentenkontakten im CRM\\-System\n* Analyse von Rekrutierungskennzahlen und kontinuierliche Optimierung der Beratungs\\- und Rekrutierungsprozesse\n* Enge Zusammenarbeit mit Marketing, Studienservice und Studiengangsleitungen\n\n#### **Das solltest du mitbringen**\n\n* Abgeschlossenes Hochschulstudium\n* Berufserfahrung in der Studierendenrekrutierung, Studienberatung, im Hochschulmarketing, Recruiting oder Vertrieb ist von Vorteil\n* Ausgeprägte Beratungs\\-, Kommunikations\\- und Präsentationskompetenz\n* Freude am Umgang mit Menschen sowie hohe Service\\- und Kundenorientierung\n* Erfahrung mit CRM\\-Systemen und digitalen Kommunikationskanälen ist wünschenswert\n* Sehr gute Deutsch\\-sowie Englischkenntnisse auf mindestens Niveau C1 des Gemeinsamen Europäischen Referenzrahmens (GER) oder eine vergleichbare Qualifikation\n* Eigeninitiative, Organisationstalent und selbstständige Arbeitsweise\n\n#### **Was dich bei velpTEC erwartet**\n\n* Vollständig remote im Homeoffice in Deutschland oder hybrides Arbeiten an unseren Standorten in Hannover, München oder Leipzig\n* Flexible Arbeitszeiten mit Kernarbeitszeit – Arzttermine, Kita und andere wichtige Termine sind kein Problem\n* Fixgehalt \\+ Zielbonus \\+ 100 € (in Vollzeit) monatliche betriebliche Altersvorsorge nach 6 Monaten \\+ 15 % Zuschuss auf Eigenanteil \\+ attraktive Mitarbeiterrabatte\n* 3 bezahlte Educational Days pro Jahr für Weiterbildungen \\+ 1 zusätzlicher Urlaubstag für Ehrenamt\n* Ein jährliches Gesundheitsbudget von 600 € (in Vollzeit) nach 6 Monaten \\+ Zugang zu über 13\\.000 Fitness\\- und Wellnessangeboten (EGYM Wellpass)\n* Regelmäßige Teamevents und gemeinsame Erlebnisse\n* Viel Gestaltungsspielraum, abwechslungsreiche Aufgaben und Offenheit für neue Ideen und Innovationen",
-      "salary": "",
-      "salary_source": "",
-      "salary_currency": "",
-      "job_type": "parttime, fulltime",
-      "is_remote": true,
-      "work_arrangement": "Remote in-state eligible",
-      "emails": "",
-      "ats": "Indeed"
-    }
-  ]
+  "new_jobs": []
 }
