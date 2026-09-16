@@ -1,6 +1,10 @@
 # 🟦 Indeed — Job Finder Esra Roles
-*Last updated: 2026-09-16 17:56 UTC*
+*Last updated: 2026-09-16 19:01 UTC*
 
-**0 new role(s)** since last run · 0 total in last 72h
+**1 new role(s)** since last run · 1 total in last 72h
 
-No new roles since the last run.
+### [Talent Acquisition Lead](https://uk.indeed.com/viewjob?jk=c9c129dbf22af538) — Support Revolution
+- 📍 **Location:** Remote, GB
+- **Work mode:** Remote in-state eligible
+- **Job type:** fulltime
+- 🕒 **Posted:** 2026-09-16
