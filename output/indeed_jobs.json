@@ -1,7 +1,7 @@
 {
-  "scraped_at": "2026-09-21 17:53 UTC",
+  "scraped_at": "2026-09-21 18:57 UTC",
   "total": 1,
-  "new_count": 1,
+  "new_count": 0,
   "jobs": [
     {
       "company": "AF Discounts Depot LTD",
@@ -22,24 +22,5 @@
       "ats": "Indeed"
     }
   ],
-  "new_jobs": [
-    {
-      "company": "AF Discounts Depot LTD",
-      "title": "HR Manager – Zero Hours Contract",
-      "location": "Remote, GB",
-      "url": "https://uk.indeed.com/viewjob?jk=138869616e85bd4f",
-      "direct_url": "http://uk.indeed.com/job/hr-manager-zero-hours-contract-138869616e85bd4f",
-      "company_url": "https://uk.indeed.com/cmp/Af-Discounts-Depot-Ltd",
-      "date_posted": "2026-09-19",
-      "description": "Company: AF Discounts Depot Ltd\n\nLocation: Birmingham / Remote\n\nJob Type: Zero Hours Contract\n\nSalary: £15–£20 per hour, depending on experience\n\nHours: Flexible / As required\n\nAbout AF Discounts Depot Ltd\n\nAF Discounts Depot Ltd is a growing UK\\-based e\\-commerce business operating across online marketplaces and direct\\-to\\-customer sales channels. We are looking for an experienced and organised HR Manager to support our growing team and help develop effective HR processes within the company.\n\nThe Role\n\nAs HR Manager, you will be responsible for supporting the day\\-to\\-day HR needs of the business. This is a flexible zero\\-hours position, making it suitable for an experienced HR professional who can provide support as and when required.\n\nKey Responsibilities\n\n● Manage day\\-to\\-day HR administration and employee records.\n\n● Support recruitment, interviews and onboarding of new employees.\n\n● Prepare employment contracts and HR documentation.\n\n● Maintain accurate and confidential employee records.\n\n● Support employee relations and workplace issues.\n\n● Assist with company HR policies and procedures.\n\n● Monitor holiday, sickness and absence records.\n\n● Support performance management and employee development.\n\n● Ensure HR processes are handled in accordance with UK employment legislation.\n\n● Liaise with management regarding staffing and HR matters.\n\n● Provide general HR advice and support to the company director.\n\n● Maintain confidentiality of sensitive employee and company information.\n\nRequirements\n\n● Previous experience in an HR Manager, HR Officer or similar HR role.\n\n● Good knowledge of UK employment practices and HR procedures.\n\n● Strong communication and organisational skills.\n\n● Ability to work independently and manage confidential information.\n\n● Good attention to detail.\n\n● Experience with recruitment and employee documentation.\n\n● Ability to work flexibly according to business requirements.\n\n● CIPD qualification or relevant HR experience is desirable but not essential.\n\nWhat We Offer\n\n● Flexible zero\\-hours contract.\n\n● Competitive hourly rate.\n\n● Remote/in person working options.\n\n● Flexible working hours according to business requirements.\n\n● Opportunity to work with a growing UK e\\-commerce company.\n\n● Potential for increased hours and responsibilities as the business grows.\n\nHow to Apply\n\nPlease submit your CV along with a short covering message explaining your HR experience and availability\n\nSend us your Cv : info@afdiscountsdepot.co.uk\n\nAF Discount Depot Ltd is an equal opportunities employer.\n\nPay: £14\\.50 per hour\n\nBenefits:\n\n* Sick pay\n* Work from home\n\nWork Location: Remote",
-      "salary": "",
-      "salary_source": "",
-      "salary_currency": "",
-      "job_type": "",
-      "is_remote": true,
-      "work_arrangement": "Remote in-state eligible",
-      "emails": "info@afdiscountsdepot.co.uk",
-      "ats": "Indeed"
-    }
-  ]
+  "new_jobs": []
 }
