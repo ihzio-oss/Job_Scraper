@@ -1,6 +1,9 @@
 # 🟦 Indeed — Job Finder Esra Roles
-*Last updated: 2026-09-21 16:55 UTC*
+*Last updated: 2026-09-21 17:53 UTC*
 
-**0 new role(s)** since last run · 0 total in last 72h
+**1 new role(s)** since last run · 1 total in last 72h
 
-No new roles since the last run.
+### [HR Manager – Zero Hours Contract](https://uk.indeed.com/viewjob?jk=138869616e85bd4f) — AF Discounts Depot LTD
+- 📍 **Location:** Remote, GB
+- **Work mode:** Remote in-state eligible
+- 🕒 **Posted:** 2026-09-19
