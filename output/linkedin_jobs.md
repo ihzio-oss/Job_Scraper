@@ -1,6 +1,8 @@
 # 🔥 LinkedIn — Job Finder Esra Roles
-*Last updated: 2026-09-28 03:54 UTC*
+*Last updated: 2026-09-28 15:56 UTC*
 
-**0 new role(s)** since last run · 0 total in last 72h
+**1 new role(s)** since last run · 1 total in last 72h
 
-No new roles since the last run.
+### [Recruitment Manager - € 110.000 OTE - Team van 8 sportieve mensen aansturen 🏋️♀️🏋️♀️🏋️♀️🏋️♀️🏋️♀️🏋️♀️🏋️♀️🏋️♀️](https://www.linkedin.com/jobs/view/4472747175/) — Recruitment Masters
+- 📍 **Location:** Amsterdam Area
+- 🕒 **Posted:** 2026-09-28
