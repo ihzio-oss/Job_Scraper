@@ -1,6 +1,10 @@
 # 🟦 Indeed — Job Finder Esra Roles
-*Last updated: 2026-09-30 03:57 UTC*
+*Last updated: 2026-09-30 16:02 UTC*
 
-**0 new role(s)** since last run · 1 total in last 72h
+**1 new role(s)** since last run · 2 total in last 72h
 
-No new roles since the last run.
+### [Group Human Resources Manager](https://ie.indeed.com/viewjob?jk=41ce6fb3dd6b9221) — Ardan Collective
+- 📍 **Location:** Remote, IE
+- **Work mode:** Remote in-state eligible
+- **Job type:** fulltime
+- 🕒 **Posted:** 2026-09-30
