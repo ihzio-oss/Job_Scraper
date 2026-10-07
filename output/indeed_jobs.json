@@ -1,7 +1,7 @@
 {
-  "scraped_at": "2026-10-07 16:10 UTC",
+  "scraped_at": "2026-10-07 17:08 UTC",
   "total": 1,
-  "new_count": 1,
+  "new_count": 0,
   "jobs": [
     {
       "company": "Levy",
@@ -22,24 +22,5 @@
       "ats": "Indeed"
     }
   ],
-  "new_jobs": [
-    {
-      "company": "Levy",
-      "title": "Tech Talent Acquisition Partner",
-      "location": "Remote, GB",
-      "url": "https://uk.indeed.com/viewjob?jk=4dd1c910f79a64c9",
-      "direct_url": "https://jobs.compass-group.co.uk/job/75846814?in_platform_id=18",
-      "company_url": "https://uk.indeed.com/cmp/Levy-435e93bd",
-      "date_posted": "2026-10-07",
-      "description": "**Tech Talent Acquisition Partner - Compass Group UK&I**\n\n**Competitive salary + commission and great benefits, remote working with occasional UK travel | Full time / Permanent**\n\nWe're looking for a Tech Talent Acquisition Partner to lead specialist digital and technology recruitment across Compass Group UK&I. You’ll work with hiring managers and People teams to understand business priorities; shape hiring briefs and agree what great looks like before a search begins.\n\nThis exciting in house recruitment opportunity goes beyond filling vacancies. You’ll use direct search and market insight to find talent; guide fair hiring decisions and build pipelines for critical roles and future demand. You’ll be accountable for a positive candidate experience, strong hiring manager relationships and reducing unnecessary agency reliance.\n\n**We are Compass UK&I**\n\nWe're a global leader in food services operating in over 25 countries with around 590,000 employees worldwide. We provide expert catering, cleaning, vending and facilities management services. Our industry expertise spans education, business, healthcare, government, defence, sport and leisure, and hospitality.\n\nFrom outstanding dining experiences in amazing venues and stadiums to feeding thousands of students, patients, workers and military personnel, we deliver warm welcomes, clean buildings and safe environments.\n\n**Tech Talent Acquisition Partner - The role**\n\n* Build trusted relationships with leaders and hiring managers to understand talent needs.\n* Shape hiring strategies through effective briefs, success criteria and recruitment plans.\n* Provide market insight on talent, salaries and competitor activity.\n* Lead direct sourcing for management, specialist and senior technology roles.\n* Build proactive talent pipelines for current and future hiring needs.\n* Drive quality hiring through structured, fair and evidence-based assessment.\n* Deliver an excellent candidate experience aligned to the Compass employer brand.\n* Use data and KPIs to improve recruitment performance and identify risks.\n* Maximise direct hiring and reduce unnecessary agency spend.\n* Collaborate with talent acquisition colleagues sharing talent intelligence, best practice and supporting future talent initiatives.\n\n**What we're looking for...**\n\n* Experience delivering end to end recruitment with a focus on innovative digital, technology, and transformation, including direct search for management or specialist roles such as Software Engineer, Digital Project Manager, IT Lead, Product Lead.\n* Confidence partnering with senior hiring managers and constructively challenging a brief.\n* Strong candidate assessment and interviewing judgement.\n* An understanding of relevant tech expertise such as Python, Java, AWS.\n* Ability to use market information and recruitment data to shape decisions.\n* A well organised approach to managing multiple vacancies without losing pace or candidate care.\n* Commitment to fair, inclusive hiring and accurate record keeping.\n\n**What you'll get in return...**\n\n* Competitive salary + commission and full company benefits\n* 23 days' annual leave plus bank holidays, your birthday off, and a holiday purchase scheme\n* Healthcare & wellbeing: Aviva Digicare, Medicash (dental, optical, therapy treatments)\n* Mental health support: 24/7 Employee Assistance Programme\n* Family benefits: Enhanced maternity, paternity, and adoption leave. 2 days’ additional leave after returning from maternity leave, day off for your baby’s first birthday, enhanced family leave\n* Perks & discounts: Shopping, entertainment, and travel discounts, 20% off Nuffield Health and 10% off PureGym memberships\n* Financial wellbeing: Pension scheme, Life Assurance, preferred rates on salary finance products\n* Development opportunities: Professional subscriptions, ongoing training and structured career pathways",
-      "salary": "",
-      "salary_source": "",
-      "salary_currency": "",
-      "job_type": "fulltime",
-      "is_remote": true,
-      "work_arrangement": "Remote in-state eligible",
-      "emails": "",
-      "ats": "Indeed"
-    }
-  ]
+  "new_jobs": []
 }
