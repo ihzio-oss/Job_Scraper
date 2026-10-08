@@ -1,7 +1,7 @@
 {
-  "scraped_at": "2026-10-08 22:01 UTC",
+  "scraped_at": "2026-10-08 23:02 UTC",
   "total": 3,
-  "new_count": 1,
+  "new_count": 0,
   "jobs": [
     {
       "company": "Parexel",
@@ -58,24 +58,5 @@
       "ats": "Indeed"
     }
   ],
-  "new_jobs": [
-    {
-      "company": "Parexel",
-      "title": "Senior Patient Recruitment Lead (UK)",
-      "location": "Remote, UK",
-      "url": "https://uk.indeed.com/viewjob?jk=2aba45c1ed3415ab",
-      "direct_url": "https://jobs.parexel.com/job/-/-/877/101709107408",
-      "company_url": "https://uk.indeed.com/cmp/Parexel",
-      "date_posted": "2026-10-08",
-      "description": "**At Parexel, your career can make a difference.**\n\nWe are a leading Clinical Research Organization (CRO) dedicated to advancing healthcare and bringing life-changing therapies to patients around the world.\n\nWe are seeking a Senior Patient Recruitment Lead to join our growing global Patient Recruitment team. As a Senior Patient Recruitment Lead, you will join a dynamic, collaborative environment that helps patients access clinical trial opportunities through innovative recruitment, engagement, and retention strategies. Through partnership with global teams, sponsors, sites, and patient-focused vendors, you will increase your exposure to all aspects of patient recruitment while building a rewarding career in clinical research.\n\n**Who We Are Looking For;**\n\n***An individual who is...***\n\n* passionate about improving the patient and caregiver experience in clinical trials\n* an excellent communicator and relationship builder\n* confident and comfortable within in a client-facing role, including complex discussions and presentations\n* organized and capable of managing multiple priorities\n* analytical with good problem-solving skills\n* Adaptable and collaborative\n* Comfortable working with metrics, KPIs and project tracking\n\n**What You Will Do;**\n\n* Support patient recruitment, engagement and retention initiatives\n* Lead patient recruitment projects and support delivery across complex cases\n* Coordinate patient-facing materials, websites and campaigns\n* Work with vendors and study teams\n* Monitor KPIs, metrics and recruitment performance\n* Support budgets, purchase orders and project documentation\n* Contribute to innovative recruitment strategies\n* Lead client-facing communications, presentations and stakeholder management\n\n**What You Will Bring;**\n\n* Degree in Life Sciences, Healthcare, Business or related field, or equivalent experience\n* 3-5+ years of experience in a patient recruitment environment\n* Demonstrated client-facing experience, including managing complex cases and presenting or communicating directly with clients\n* Direct patient-facing experience is required\n* Strong Microsoft Office skills\n* Excellent English communication skills\n* Strong organizational and problem-solving abilities\n\n**Additional Details**\n\n* Home-based opportunity within the UK\n* Flexible working arrangements\n* Continued career growth within Patient Recruitment\n\n**Why Join Us**\n\nBe part of innovative projects that improve patient access to clinical trials. Experience a collaborative culture, professional development opportunities, global exposure, and meaningful work that helps bring new therapies to patients worldwide.\n\n  \n#LI-REMOTE",
-      "salary": "",
-      "salary_source": "",
-      "salary_currency": "",
-      "job_type": "",
-      "is_remote": true,
-      "work_arrangement": "Remote in-state eligible",
-      "emails": "",
-      "ats": "Indeed"
-    }
-  ]
+  "new_jobs": []
 }
